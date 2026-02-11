@@ -1,0 +1,5 @@
+{
+  "name": "Legal Lense",
+  "description": "Your intelligent window into Indian Law. Legal Lense analyzes user scenarios, retrieves relevant sections from the Indian Penal Code (IPC), and generates legal insights using Google Gemini.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Lense</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Urbanist', 'sans-serif'],
+              serif: ['Fraunces', 'serif'],
+              mono: ['Cousine', 'monospace'],
+            },
+            colors: {
+              lense: {
+                50: '#fafaf9',  // Warm Paper
+                100: '#f5f5f4', // Stone 100
+                200: '#e7e5e4', // Stone 200
+                300: '#d6d3d1', // Stone 300
+                800: '#292524', // Stone 800
+                900: '#1c1917', // Stone 900 (Charcoal)
+                black: '#0c0a09',
+                gold: '#b45309', // Amber 700
+                goldlight: '#fcd34d', // Amber 300
+              },
+              paper: '#fafaf9'
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-lense-50 text-lense-900 antialiased h-screen overflow-hidden selection:bg-lense-gold selection:text-white">
+    <div id="root" class="h-full"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
